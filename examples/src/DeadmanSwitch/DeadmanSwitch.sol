@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
 
-import { ERC7579ValidatorBase, ERC7579HookBase } from "modulekit/src/Modules.sol";
-import { PackedUserOperation } from "modulekit/src/ModuleKit.sol";
+import { ERC7579ValidatorBase, ERC7579HookBase } from "@rhinestone/main/src/Modules.sol";
+import { PackedUserOperation } from "@rhinestone/main/src/ModuleKit.sol";
 import { SignatureCheckerLib } from "solady/utils/SignatureCheckerLib.sol";
 import { ECDSA } from "solady/utils/ECDSA.sol";
 

@@ -10,7 +10,7 @@ import { EntryPointSimulations } from
 import { IEntryPointSimulations } from
     "@ERC4337/account-abstraction/contracts/interfaces/IEntryPointSimulations.sol";
 import { ExtensibleFallbackHandler } from "../core/ExtensibleFallbackHandler.sol";
-import { MockRegistry } from "modules/src/mocks/MockRegistry.sol";
+import { MockRegistry } from "@rhinestone/modules/src/mocks/MockRegistry.sol";
 import { MockFactory } from "./predeploy/MockFactory.sol";
 
 /* solhint-disable no-global-import */

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.23;
 
 import { PackedUserOperation } from "erc7579/interfaces/IERC7579Module.sol";
-import { MockValidator as MockValidatorBase } from "modules/src/mocks/MockValidator.sol";
+import { MockValidator as MockValidatorBase } from "@rhinestone/modules/src/mocks/MockValidator.sol";
 
 contract MockValidator is MockValidatorBase {
     function validateUserOp(

@@ -2,13 +2,13 @@
 pragma solidity ^0.8.21;
 
 import "forge-std/Test.sol";
-import "modulekit/src/ModuleKit.sol";
-import "modulekit/src/Helpers.sol";
-import "modulekit/src/Core.sol";
+import "@rhinestone/main/src/ModuleKit.sol";
+import "@rhinestone/main/src/Helpers.sol";
+import "@rhinestone/main/src/Core.sol";
 import "solmate/test/utils/mocks/MockERC20.sol";
-import { MODULE_TYPE_VALIDATOR, MODULE_TYPE_HOOK } from "modulekit/src/external/ERC7579.sol";
+import { MODULE_TYPE_VALIDATOR, MODULE_TYPE_HOOK } from "@rhinestone/main/src/external/ERC7579.sol";
 
-import "examples/src/DeadmanSwitch/DeadmanSwitch.sol";
+import "@rhinestone/examples/src/DeadmanSwitch/DeadmanSwitch.sol";
 import "forge-std/interfaces/IERC20.sol";
 import { ECDSA } from "solady/utils/ECDSA.sol";
 

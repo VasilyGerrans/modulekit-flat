@@ -24,11 +24,11 @@ test = "account-factory/test"
 out = "account-factory/out"
 cache_path = 'account-factory/cache'
 
-[profile.modulekit]
-src = "modulekit/src"
-test = "modulekit/test"
-out = "modulekit/out"
-cache_path = 'modulekit/cache'
+[profile.main]
+src = "main/src"
+test = "main/test"
+out = "main/out"
+cache_path = 'main/cache'
 
 [profile.examples]
 src = "examples/src"

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.23;
 
 import { Auxiliary, AuxiliaryFactory } from "./Auxiliary.sol";
-import { MultiAccountFactory } from "account-factory/src/MultiAccountFactory.sol";
+import { MultiAccountFactory } from "@rhinestone/account-factory/src/MultiAccountFactory.sol";
 import { PackedUserOperation, IEntryPoint, IStakeManager } from "../external/ERC4337.sol";
 import { ERC7579Helpers, BootstrapUtil } from "./utils/ERC7579Helpers.sol";
 import { ENTRYPOINT_ADDR } from "./predeploy/EntryPoint.sol";

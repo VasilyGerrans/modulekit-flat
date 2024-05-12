@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.23;
 
-import { ERC7579ValidatorBase } from "modulekit/src/Modules.sol";
-import { PackedUserOperation } from "modulekit/src/external/ERC4337.sol";
+import { ERC7579ValidatorBase } from "@rhinestone/main/src/Modules.sol";
+import { PackedUserOperation } from "@rhinestone/main/src/external/ERC4337.sol";
 
 import { SignatureCheckerLib } from "solady/utils/SignatureCheckerLib.sol";
 import { ECDSA } from "solady/utils/ECDSA.sol";

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import { ERC7579ValidatorBase } from "modulekit/src/Modules.sol";
-import { IERC7579Module } from "modulekit/src/external/ERC7579.sol";
-import { IERC7579Account, Execution } from "modulekit/src/Accounts.sol";
-import { PackedUserOperation } from "modulekit/src/external/ERC4337.sol";
+import { ERC7579ValidatorBase } from "@rhinestone/main/src/Modules.sol";
+import { IERC7579Module } from "@rhinestone/main/src/external/ERC7579.sol";
+import { IERC7579Account, Execution } from "@rhinestone/main/src/Accounts.sol";
+import { PackedUserOperation } from "@rhinestone/main/src/external/ERC4337.sol";
 import { LibSort } from "solady/utils/LibSort.sol";
 import { ECDSAFactor } from "./ECDSAFactor.sol";
 import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";

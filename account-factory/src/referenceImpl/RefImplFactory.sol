@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.23;
 
-import "modules/src/external/ERC7579.sol";
+import "@rhinestone/modules/src/external/ERC7579.sol";
 import { LibClone } from "solady/utils/LibClone.sol";
 
 interface IMSA {

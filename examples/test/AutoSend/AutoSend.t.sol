@@ -2,13 +2,13 @@
 pragma solidity ^0.8.23;
 
 import "forge-std/Test.sol";
-import "modulekit/src/ModuleKit.sol";
-import "modulekit/src/Modules.sol";
-import "modulekit/src/Mocks.sol";
-import { AutoSendSessionKey } from "examples/src/AutoSend/AutoSend.sol";
+import "@rhinestone/main/src/ModuleKit.sol";
+import "@rhinestone/main/src/Modules.sol";
+import "@rhinestone/main/src/Mocks.sol";
+import { AutoSendSessionKey } from "@rhinestone/examples/src/AutoSend/AutoSend.sol";
 import { SignatureCheckerLib } from "solady/utils/SignatureCheckerLib.sol";
 import { Solarray } from "solarray/Solarray.sol";
-import { MODULE_TYPE_EXECUTOR } from "modulekit/src/external/ERC7579.sol";
+import { MODULE_TYPE_EXECUTOR } from "@rhinestone/main/src/external/ERC7579.sol";
 
 contract AutoSendTest is RhinestoneModuleKit, Test {
     using ModuleKitHelpers for *;

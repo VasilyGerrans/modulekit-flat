@@ -2,14 +2,14 @@
 pragma solidity ^0.8.23;
 
 import "forge-std/Test.sol";
-import "modulekit/src/ModuleKit.sol";
-import "modulekit/src/Helpers.sol";
-import "modulekit/src/Core.sol";
+import "@rhinestone/main/src/ModuleKit.sol";
+import "@rhinestone/main/src/Helpers.sol";
+import "@rhinestone/main/src/Core.sol";
 import "solmate/test/utils/mocks/MockERC20.sol";
 import "solmate/test/utils/mocks/MockERC4626.sol";
-import { AutoSavingToVault } from "examples/src/AutoSavings/AutoSavings.sol";
+import { AutoSavingToVault } from "@rhinestone/examples/src/AutoSavings/AutoSavings.sol";
 
-import { MODULE_TYPE_EXECUTOR } from "modulekit/src/external/ERC7579.sol";
+import { MODULE_TYPE_EXECUTOR } from "@rhinestone/main/src/external/ERC7579.sol";
 
 contract AutoSavingsTest is RhinestoneModuleKit, Test {
     using ModuleKitHelpers for *;

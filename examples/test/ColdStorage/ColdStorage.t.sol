@@ -2,25 +2,25 @@
 pragma solidity ^0.8.23;
 
 import "forge-std/Test.sol";
-import "modulekit/src/ModuleKit.sol";
-import "modulekit/src/Modules.sol";
-import "modulekit/src/Helpers.sol";
-import "modulekit/src/core/ExtensibleFallbackHandler.sol";
-import "modulekit/src/Mocks.sol";
+import "@rhinestone/main/src/ModuleKit.sol";
+import "@rhinestone/main/src/Modules.sol";
+import "@rhinestone/main/src/Helpers.sol";
+import "@rhinestone/main/src/core/ExtensibleFallbackHandler.sol";
+import "@rhinestone/main/src/Mocks.sol";
 import { Solarray } from "solarray/Solarray.sol";
 import { ECDSA } from "solady/utils/ECDSA.sol";
 
-import { IERC7579Account, Execution } from "modulekit/src/Accounts.sol";
-import { FlashloanCallback } from "examples/src/ColdStorage/FlashloanCallback.sol";
-import { FlashloanLender } from "examples/src/ColdStorage/FlashloanLender.sol";
-import { ColdStorageHook } from "examples/src/ColdStorage/ColdStorageHook.sol";
-import { ColdStorageExecutor } from "examples/src/ColdStorage/ColdStorageExecutor.sol";
-import { OwnableValidator } from "examples/src/OwnableValidator/OwnableValidator.sol";
+import { IERC7579Account, Execution } from "@rhinestone/main/src/Accounts.sol";
+import { FlashloanCallback } from "@rhinestone/examples/src/ColdStorage/FlashloanCallback.sol";
+import { FlashloanLender } from "@rhinestone/examples/src/ColdStorage/FlashloanLender.sol";
+import { ColdStorageHook } from "@rhinestone/examples/src/ColdStorage/ColdStorageHook.sol";
+import { ColdStorageExecutor } from "@rhinestone/examples/src/ColdStorage/ColdStorageExecutor.sol";
+import { OwnableValidator } from "@rhinestone/examples/src/OwnableValidator/OwnableValidator.sol";
 import { CALLTYPE_SINGLE, CALLTYPE_STATIC } from "erc7579/lib/ModeLib.sol";
 
-import { ERC7579BootstrapConfig } from "modulekit/src/external/ERC7579.sol";
+import { ERC7579BootstrapConfig } from "@rhinestone/main/src/external/ERC7579.sol";
 
-import "examples/src/ColdStorage/interfaces/Flashloan.sol";
+import "@rhinestone/examples/src/ColdStorage/interfaces/Flashloan.sol";
 import "erc7579/lib/ExecutionLib.sol";
 
 contract ColdStorageTest is RhinestoneModuleKit, Test {
