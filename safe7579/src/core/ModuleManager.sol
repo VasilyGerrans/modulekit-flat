@@ -3,9 +3,9 @@ pragma solidity ^0.8.23;
 
 import { SentinelListLib } from "sentinellist/SentinelList.sol";
 import { SentinelList4337Lib } from "sentinellist/SentinelList4337.sol";
-import { IModule } from "erc7579/interfaces/IERC7579Module.sol";
+import { IModule } from "erc7579/src/interfaces/IERC7579Module.sol";
 import { ExecutionHelper } from "./ExecutionHelper.sol";
-import { Receiver } from "erc7579/core/Receiver.sol";
+import { Receiver } from "erc7579/src/core/Receiver.sol";
 import { AccessControl } from "./AccessControl.sol";
 
 struct ModuleManagerStorage {

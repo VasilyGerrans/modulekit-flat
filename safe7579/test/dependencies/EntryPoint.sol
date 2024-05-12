@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
 
-import "account-abstraction/interfaces/IEntryPoint.sol";
-import { IEntryPoint } from "account-abstraction/interfaces/IEntryPoint.sol";
-import { EntryPoint, SenderCreator } from "account-abstraction/core/EntryPoint.sol";
-import { EntryPointSimulations } from "account-abstraction/core/EntryPointSimulations.sol";
+import "@ERC4337/account-abstraction/contracts/interfaces/IEntryPoint.sol";
+import { IEntryPoint } from "@ERC4337/account-abstraction/contracts/interfaces/IEntryPoint.sol";
+import { EntryPoint, SenderCreator } from "@ERC4337/account-abstraction/contracts/core/EntryPoint.sol";
+import { EntryPointSimulations } from "@ERC4337/account-abstraction/contracts/core/EntryPointSimulations.sol";
 
 contract EntryPointSimulationsPatch is EntryPointSimulations {
     address _entrypointAddr = address(this);

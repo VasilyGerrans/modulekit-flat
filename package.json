@@ -24,21 +24,5 @@
     "solady": "github:vectorized/solady",
     "solarray": "github:sablier-labs/solarray",
     "solmate": "github:transmissions11/solmate"
-  },
-  "bundledDependencies": [
-    "@safe-global/safe-contracts",
-    "checknsignatures",
-    "erc7579",
-    "sentinellist",
-    "@ERC4337/account-abstraction",
-    "@ERC4337/account-abstraction-v0.6",
-    "@openzeppelin/contracts",
-    "@prb/math",
-    "ds-test",
-    "erc4337-validation",
-    "forge-std",
-    "solady",
-    "solarray",
-    "solmate"
-  ]
+  }
 }

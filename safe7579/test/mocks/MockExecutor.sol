@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.23;
 
-import { IERC7579Account, Execution } from "erc7579/interfaces/IERC7579Account.sol";
-import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";
-import { ModeLib } from "erc7579/lib/ModeLib.sol";
+import { IERC7579Account, Execution } from "erc7579/src/interfaces/IERC7579Account.sol";
+import { ExecutionLib } from "erc7579/src/lib/ExecutionLib.sol";
+import { ModeLib } from "erc7579/src/lib/ModeLib.sol";
 import { MockExecutor as MockExecutorBase } from "modules/src/mocks/MockExecutor.sol";
 
 contract MockExecutor is MockExecutorBase {

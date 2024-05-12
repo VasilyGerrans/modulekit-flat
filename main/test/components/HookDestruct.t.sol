@@ -5,7 +5,7 @@ import "main/src/modules/ERC7579HookDestruct.sol";
 import { IERC7579Account } from "main/src/external/ERC7579.sol";
 
 import "forge-std/Test.sol";
-import { ExecutionLib, Execution } from "erc7579/lib/ExecutionLib.sol";
+import { ExecutionLib, Execution } from "erc7579/src/lib/ExecutionLib.sol";
 
 abstract contract HookDestructTest is Test, ERC7579HookDestruct { // <-- marked as abstract
     struct Log {

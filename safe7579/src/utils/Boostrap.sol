@@ -4,7 +4,7 @@ pragma solidity ^0.8.21;
 import { ModuleManager } from "../core/ModuleManager.sol";
 import { HookManager } from "../core/HookManager.sol";
 
-import { IModule } from "erc7579/interfaces/IERC7579Module.sol";
+import { IModule } from "erc7579/src/interfaces/IERC7579Module.sol";
 
 struct BootstrapConfig {
     address module;

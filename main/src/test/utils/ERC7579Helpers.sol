@@ -2,8 +2,8 @@
 pragma solidity ^0.8.23;
 
 import { Execution, IERC7579Account, ERC7579BootstrapConfig } from "../../external/ERC7579.sol";
-import "erc7579/lib/ModeLib.sol";
-import "erc7579/interfaces/IERC7579Module.sol";
+import "erc7579/src/lib/ModeLib.sol";
+import "erc7579/src/interfaces/IERC7579Module.sol";
 import { PackedUserOperation, IEntryPoint } from "../../external/ERC4337.sol";
 import { AccountInstance } from "../RhinestoneModuleKit.sol";
 

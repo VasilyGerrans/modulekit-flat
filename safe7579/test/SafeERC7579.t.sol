@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.23;
 
-import "erc7579/interfaces/IERC7579Account.sol";
-import "erc7579/lib/ModeLib.sol";
-import "erc7579/lib/ExecutionLib.sol";
+import "erc7579/src/interfaces/IERC7579Account.sol";
+import "erc7579/src/lib/ModeLib.sol";
+import "erc7579/src/lib/ExecutionLib.sol";
 import { TestBaseUtil, MockTarget, MockFallback } from "./Base.t.sol";
-import { PackedUserOperation } from "account-abstraction/interfaces/PackedUserOperation.sol";
+import { PackedUserOperation } from "@ERC4337/account-abstraction/contracts/interfaces/PackedUserOperation.sol";
 
 import "forge-std/console2.sol";
 
