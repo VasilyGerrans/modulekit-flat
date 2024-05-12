@@ -1,0 +1,47 @@
+[profile.default]
+fs_permissions = [{ access = "read", path = "out-optimized" }, { access = "read-write", path = "gas_calculations" }]
+allow_paths = ["*", "/"]
+cache = true
+solc_version = "0.8.25"
+
+[rpc_endpoints]
+mainnet = "https://rpc.ankr.com/eth"
+
+[profile.modules]
+src = "modules/src"
+out = "modules/out"
+cache_path = 'modules/cache'
+
+[profile.safe7579]
+src = "safe7579/src"
+test = "safe7579/test"
+out = "safe7579/out"
+cache_path = 'safe7579/cache'
+
+[profile.account-factory]
+src = "account-factory/src"
+test = "account-factory/test"
+out = "account-factory/out"
+cache_path = 'account-factory/cache'
+
+[profile.modulekit]
+src = "modulekit/src"
+test = "modulekit/test"
+out = "modulekit/out"
+cache_path = 'modulekit/cache'
+
+[profile.examples]
+src = "examples/src"
+test = "examples/test"
+out = "examples/out"
+cache_path = 'examples/cache'
+
+[fmt]
+bracket_spacing = true
+int_types = "long"
+line_length = 100
+multiline_func_header = "all"
+number_underscore = "thousands"
+quote_style = "double"
+tab_width = 4
+wrap_comments = true
