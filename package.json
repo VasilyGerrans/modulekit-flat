@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-  },
-  "devDependencies": {
     "@safe-global/safe-contracts": "^1.4.1",
     "checknsignatures": "github:VasilyGerrans/checknsignatures",
     "erc7579": "github:erc7579/erc7579-implementation",
