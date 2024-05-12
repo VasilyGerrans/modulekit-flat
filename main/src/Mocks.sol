@@ -5,15 +5,15 @@ pragma solidity ^0.8.23;
 /*//////////////////////////////////////////////////////////////
                              Aux
 //////////////////////////////////////////////////////////////*/
-import { MockRegistry } from "@rhinestone/modules/src/mocks/MockRegistry.sol";
-import { MockTarget } from "@rhinestone/modules/src/mocks/MockTarget.sol";
+import { MockRegistry } from "modules/src/mocks/MockRegistry.sol";
+import { MockTarget } from "modules/src/mocks/MockTarget.sol";
 
 /*//////////////////////////////////////////////////////////////
                              Modules
 //////////////////////////////////////////////////////////////*/
-import { MockValidator } from "@rhinestone/modules/src/mocks/MockValidator.sol";
-import { MockExecutor } from "@rhinestone/modules/src/mocks/MockExecutor.sol";
-import { MockHook } from "@rhinestone/modules/src/mocks/MockHook.sol";
+import { MockValidator } from "modules/src/mocks/MockValidator.sol";
+import { MockExecutor } from "modules/src/mocks/MockExecutor.sol";
+import { MockHook } from "modules/src/mocks/MockHook.sol";
 // import { MockSessionKeyValidator } from "./mocks/MockSessionKeyValidator.sol";
 
 /*//////////////////////////////////////////////////////////////

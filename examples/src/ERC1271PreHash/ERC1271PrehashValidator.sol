@@ -2,9 +2,9 @@
 
 pragma solidity ^0.8.19;
 
-import { ERC7579ValidatorBase } from "@rhinestone/main/src/modules/ERC7579ValidatorBase.sol";
+import { ERC7579ValidatorBase } from "main/src/modules/ERC7579ValidatorBase.sol";
 import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
-import { PackedUserOperation } from "@rhinestone/main/src/external/ERC4337.sol";
+import { PackedUserOperation } from "main/src/external/ERC4337.sol";
 
 contract ERC1271PrehashValidator is ERC7579ValidatorBase {
     using EnumerableSet for EnumerableSet.Bytes32Set;

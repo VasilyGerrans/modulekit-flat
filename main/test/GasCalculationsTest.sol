@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "ds-test/test.sol";
-import "@rhinestone/main/src/test/utils/GasCalculations.sol";
+import "main/src/test/utils/GasCalculations.sol";
 
 contract GasCalculationsTest is DSTest {
     function test_formatGasValue() public {

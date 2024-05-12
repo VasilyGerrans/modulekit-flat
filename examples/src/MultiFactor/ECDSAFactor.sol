@@ -2,7 +2,7 @@
 pragma solidity ^0.8.19;
 
 import { ECDSA } from "solady/utils/ECDSA.sol";
-import { ERC7579ValidatorBase } from "@rhinestone/main/src/Modules.sol";
+import { ERC7579ValidatorBase } from "main/src/Modules.sol";
 
 abstract contract ECDSAFactor is ERC7579ValidatorBase {
     /*//////////////////////////////////////////////////////////////////////////

@@ -1,9 +1,3 @@
-@rhinestone/account-factory/=./account-factory/
-@rhinestone/examples/=./examples/
-@rhinestone/main/=./main/
-@rhinestone/modules/=./modules/
-@rhinestone/safe7579=./safe7579/
-
 solady/=./node_modules/solady/src/
 account-abstraction/=./node_modules/@ERC4337/account-abstraction/contracts/
 account-abstraction-v0.6/=./node_modules/@ERC4337/account-abstraction-v0.6/contracts/

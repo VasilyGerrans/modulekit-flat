@@ -1,8 +1,8 @@
 import "forge-std/interfaces/IERC20.sol";
 import "forge-std/interfaces/IERC721.sol";
 
-import { IFallbackMethod } from "@rhinestone/main/src/core/ExtensibleFallbackHandler.sol";
-import { ERC7579ExecutorBase } from "@rhinestone/main/src/Modules.sol";
+import { IFallbackMethod } from "main/src/core/ExtensibleFallbackHandler.sol";
+import { ERC7579ExecutorBase } from "main/src/Modules.sol";
 import "./interfaces/Flashloan.sol";
 
 pragma solidity ^0.8.20;

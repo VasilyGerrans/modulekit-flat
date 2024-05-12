@@ -2,13 +2,13 @@
 pragma solidity ^0.8.23;
 
 /* solhint-disable no-global-import */
-import "@rhinestone/main/src/ModuleKit.sol";
+import "main/src/ModuleKit.sol";
 import "./MakeAccount.t.sol";
-import "@rhinestone/main/src/Mocks.sol";
-import { writeSimulateUserOp } from "@rhinestone/main/src/test/utils/Log.sol";
+import "main/src/Mocks.sol";
+import { writeSimulateUserOp } from "main/src/test/utils/Log.sol";
 import {
     MODULE_TYPE_VALIDATOR, MODULE_TYPE_EXECUTOR, MODULE_TYPE_HOOK
-} from "@rhinestone/main/src/external/ERC7579.sol";
+} from "main/src/external/ERC7579.sol";
 /* solhint-enable no-global-import */
 
 contract ERC7579DifferentialModuleKitLibTest is BaseTest {

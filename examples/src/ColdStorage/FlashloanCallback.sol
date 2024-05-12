@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import { IFallbackMethod } from "@rhinestone/main/src/core/ExtensibleFallbackHandler.sol";
+import { IFallbackMethod } from "main/src/core/ExtensibleFallbackHandler.sol";
 
-import { ERC7579ExecutorBase } from "@rhinestone/main/src/Modules.sol";
+import { ERC7579ExecutorBase } from "main/src/Modules.sol";
 import "./interfaces/Flashloan.sol";
 
 contract FlashloanCallback is IFallbackMethod, ERC7579ExecutorBase {

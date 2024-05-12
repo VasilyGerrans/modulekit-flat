@@ -2,13 +2,13 @@
 pragma solidity ^0.8.23;
 
 import "forge-std/Test.sol";
-import "@rhinestone/main/src/ModuleKit.sol";
-import "@rhinestone/main/src/Mocks.sol";
+import "main/src/ModuleKit.sol";
+import "main/src/Mocks.sol";
 
-import { SocialRecovery } from "@rhinestone/examples/src/SocialRecovery/SocialRecovery.sol";
+import { SocialRecovery } from "examples/src/SocialRecovery/SocialRecovery.sol";
 import { Solarray } from "solarray/Solarray.sol";
 
-import { MODULE_TYPE_VALIDATOR } from "@rhinestone/main/src/external/ERC7579.sol";
+import { MODULE_TYPE_VALIDATOR } from "main/src/external/ERC7579.sol";
 
 contract DemoValidator {
     uint256 counter;

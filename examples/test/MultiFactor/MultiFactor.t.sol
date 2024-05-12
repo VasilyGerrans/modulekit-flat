@@ -2,16 +2,16 @@
 pragma solidity ^0.8.23;
 
 import "forge-std/Test.sol";
-import "@rhinestone/main/src/ModuleKit.sol";
-import "@rhinestone/main/src/Modules.sol";
-import "@rhinestone/main/src/Mocks.sol";
+import "main/src/ModuleKit.sol";
+import "main/src/Modules.sol";
+import "main/src/Mocks.sol";
 
-import { MultiFactor, ECDSAFactor } from "@rhinestone/examples/src/MultiFactor/MultiFactor.sol";
+import { MultiFactor, ECDSAFactor } from "examples/src/MultiFactor/MultiFactor.sol";
 import { SignatureCheckerLib } from "solady/utils/SignatureCheckerLib.sol";
 import { ECDSA } from "solady/utils/ECDSA.sol";
 import { Solarray } from "solarray/Solarray.sol";
 
-import { MODULE_TYPE_VALIDATOR, MODULE_TYPE_EXECUTOR } from "@rhinestone/main/src/external/ERC7579.sol";
+import { MODULE_TYPE_VALIDATOR, MODULE_TYPE_EXECUTOR } from "main/src/external/ERC7579.sol";
 
 contract DemoValidator is MockValidator {
     mapping(address account => bool isInitialized) public initialized;

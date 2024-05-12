@@ -3,7 +3,7 @@ pragma solidity ^0.8.23;
 
 import { IERC20 } from "forge-std/interfaces/IERC20.sol";
 import { IERC721 } from "forge-std/interfaces/IERC721.sol";
-import { ERC7579ModuleBase } from "@rhinestone/modules/src/base/ERC7579ModuleBase.sol";
+import { ERC7579ModuleBase } from "modules/src/base/ERC7579ModuleBase.sol";
 
 contract ERC20Revocation is ERC7579ModuleBase {
     /*//////////////////////////////////////////////////////////////////////////

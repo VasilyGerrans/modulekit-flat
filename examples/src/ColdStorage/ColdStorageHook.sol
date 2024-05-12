@@ -6,8 +6,8 @@ import { IERC721 } from "forge-std/interfaces/IERC721.sol";
 import { IERC20 } from "forge-std/interfaces/IERC20.sol";
 
 import { EnumerableMap } from "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
-import { ERC7579HookDestruct } from "@rhinestone/main/src/modules/ERC7579HookDestruct.sol";
-import { Execution } from "@rhinestone/main/src/Accounts.sol";
+import { ERC7579HookDestruct } from "main/src/modules/ERC7579HookDestruct.sol";
+import { Execution } from "main/src/Accounts.sol";
 
 contract ColdStorageHook is ERC7579HookDestruct {
     /*//////////////////////////////////////////////////////////////////////////

@@ -3,9 +3,9 @@ pragma solidity ^0.8.23;
 
 /* solhint-disable no-global-import */
 import "forge-std/Test.sol";
-import "@rhinestone/main/src/ModuleKit.sol";
-import "@rhinestone/main/src/Accounts.sol";
-import "@rhinestone/main/src/Mocks.sol";
+import "main/src/ModuleKit.sol";
+import "main/src/Accounts.sol";
+import "main/src/Mocks.sol";
 /* solhint-enable no-global-import */
 
 contract BaseTest is RhinestoneModuleKit, Test {

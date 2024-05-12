@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.23;
 
-import { ERC7579ValidatorBase } from "@rhinestone/main/src/Modules.sol";
-import { PackedUserOperation } from "@rhinestone/main/src/external/ERC4337.sol";
+import { ERC7579ValidatorBase } from "main/src/Modules.sol";
+import { PackedUserOperation } from "main/src/external/ERC4337.sol";
 import { SentinelListLib } from "sentinellist/SentinelList.sol";
 import { CheckSignatures } from "checknsignatures/CheckNSignatures.sol";
-import { IERC7579Account } from "@rhinestone/main/src/Accounts.sol";
+import { IERC7579Account } from "main/src/Accounts.sol";
 import { ModeLib, CallType, ModeCode, CALLTYPE_SINGLE } from "erc7579/lib/ModeLib.sol";
 import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";
 import { LibSort } from "solady/utils/LibSort.sol";

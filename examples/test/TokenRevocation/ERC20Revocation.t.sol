@@ -2,10 +2,10 @@
 pragma solidity ^0.8.23;
 
 import "forge-std/Test.sol";
-import "@rhinestone/main/src/ModuleKit.sol";
-import "@rhinestone/main/src/Modules.sol";
-import "@rhinestone/main/src/Mocks.sol";
-import { ERC20Revocation } from "@rhinestone/examples/src/TokenRevocation/ERC20Revocation.sol";
+import "main/src/ModuleKit.sol";
+import "main/src/Modules.sol";
+import "main/src/Mocks.sol";
+import { ERC20Revocation } from "examples/src/TokenRevocation/ERC20Revocation.sol";
 import { SignatureCheckerLib } from "solady/utils/SignatureCheckerLib.sol";
 import { Solarray } from "solarray/Solarray.sol";
 
