@@ -4,8 +4,8 @@ pragma solidity ^0.8.23;
 import { IERC20 } from "forge-std/interfaces/IERC20.sol";
 import { IERC7579Account } from "main/src/Accounts.sol";
 import { ERC7579ExecutorBase } from "main/src/Modules.sol";
-import { ModeLib } from "erc7579/src/lib/ModeLib.sol";
-import { ExecutionLib } from "erc7579/src/lib/ExecutionLib.sol";
+import { ModeLib } from "erc7579/lib/ModeLib.sol";
+import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";
 
 contract AutoSendSessionKey is ERC7579ExecutorBase {
     /*//////////////////////////////////////////////////////////////////////////

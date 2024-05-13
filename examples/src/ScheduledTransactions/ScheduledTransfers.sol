@@ -3,8 +3,8 @@ pragma solidity ^0.8.23;
 
 import { IERC7579Account, Execution } from "main/src/Accounts.sol";
 import { SchedulingBase } from "./SchedulingBase.sol";
-import { ModeLib } from "erc7579/src/lib/ModeLib.sol";
-import { ExecutionLib } from "erc7579/src/lib/ExecutionLib.sol";
+import { ModeLib } from "erc7579/lib/ModeLib.sol";
+import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";
 
 contract ScheduledTransfers is SchedulingBase {
     /*//////////////////////////////////////////////////////////////////////////

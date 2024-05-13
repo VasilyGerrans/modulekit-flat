@@ -6,9 +6,9 @@ import { PackedUserOperation } from "main/src/external/ERC4337.sol";
 import { SentinelListLib } from "sentinellist/SentinelList.sol";
 import { CheckSignatures } from "checknsignatures/CheckNSignatures.sol";
 import { IERC7579Account } from "main/src/Accounts.sol";
-import { ModeLib, CallType, ModeCode, CALLTYPE_SINGLE } from "erc7579/src/lib/ModeLib.sol";
-import { ExecutionLib } from "erc7579/src/lib/ExecutionLib.sol";
-import { LibSort } from "solady/src/utils/LibSort.sol";
+import { ModeLib, CallType, ModeCode, CALLTYPE_SINGLE } from "erc7579/lib/ModeLib.sol";
+import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";
+import { LibSort } from "solady/utils/LibSort.sol";
 
 contract SocialRecovery is ERC7579ValidatorBase {
     using LibSort for *;

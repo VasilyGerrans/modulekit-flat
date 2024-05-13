@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import { Execution } from "erc7579/src/interfaces/IERC7579Account.sol";
+import { Execution } from "erc7579/interfaces/IERC7579Account.sol";
 import { ISafe } from "../interfaces/ISafe.sol";
 
 /**

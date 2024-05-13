@@ -6,7 +6,7 @@ import "main/src/ModuleKit.sol";
 import "main/src/Modules.sol";
 import "main/src/Mocks.sol";
 import { ERC20Revocation } from "examples/src/TokenRevocation/ERC20Revocation.sol";
-import { SignatureCheckerLib } from "solady/src/utils/SignatureCheckerLib.sol";
+import { SignatureCheckerLib } from "solady/utils/SignatureCheckerLib.sol";
 import { Solarray } from "solarray/Solarray.sol";
 
 contract ERC20RevocationTest is RhinestoneModuleKit, Test {

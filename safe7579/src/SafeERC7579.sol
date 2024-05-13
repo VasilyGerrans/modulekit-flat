@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.23;
 
-import { IERC7579Account, Execution } from "erc7579/src/interfaces/IERC7579Account.sol";
-import { IMSA } from "erc7579/src/interfaces/IMSA.sol";
+import { IERC7579Account, Execution } from "erc7579/interfaces/IERC7579Account.sol";
+import { IMSA } from "erc7579/interfaces/IMSA.sol";
 import {
     CallType, ModeCode, ModeLib, CALLTYPE_SINGLE, CALLTYPE_BATCH
-} from "erc7579/src/lib/ModeLib.sol";
-import { ExecutionLib } from "erc7579/src/lib/ExecutionLib.sol";
+} from "erc7579/lib/ModeLib.sol";
+import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";
 import {
     IValidator,
     MODULE_TYPE_VALIDATOR,
     MODULE_TYPE_HOOK,
     MODULE_TYPE_EXECUTOR,
     MODULE_TYPE_FALLBACK
-} from "erc7579/src/interfaces/IERC7579Module.sol";
+} from "erc7579/interfaces/IERC7579Module.sol";
 import { AccessControl } from "./core/AccessControl.sol";
 import { HookManager } from "./core/HookManager.sol";
 import { ISafeOp, SAFE_OP_TYPEHASH } from "./interfaces/ISafeOp.sol";

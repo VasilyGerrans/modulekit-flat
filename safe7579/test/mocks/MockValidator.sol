@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.23;
 
-import { PackedUserOperation } from "erc7579/src/interfaces/IERC7579Module.sol";
+import { PackedUserOperation } from "erc7579/interfaces/IERC7579Module.sol";
 import { MockValidator as MockValidatorBase } from "modules/src/mocks/MockValidator.sol";
 
 contract MockValidator is MockValidatorBase {

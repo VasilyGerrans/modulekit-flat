@@ -8,7 +8,7 @@ import "main/src/Helpers.sol";
 import "main/src/core/ExtensibleFallbackHandler.sol";
 import "main/src/Mocks.sol";
 import { Solarray } from "solarray/Solarray.sol";
-import { ECDSA } from "solady/src/utils/ECDSA.sol";
+import { ECDSA } from "solady/utils/ECDSA.sol";
 
 import { IERC7579Account, Execution } from "main/src/Accounts.sol";
 import { FlashloanCallback } from "examples/src/ColdStorage/FlashloanCallback.sol";
@@ -16,12 +16,12 @@ import { FlashloanLender } from "examples/src/ColdStorage/FlashloanLender.sol";
 import { ColdStorageHook } from "examples/src/ColdStorage/ColdStorageHook.sol";
 import { ColdStorageExecutor } from "examples/src/ColdStorage/ColdStorageExecutor.sol";
 import { OwnableValidator } from "examples/src/OwnableValidator/OwnableValidator.sol";
-import { CALLTYPE_SINGLE, CALLTYPE_STATIC } from "erc7579/src/lib/ModeLib.sol";
+import { CALLTYPE_SINGLE, CALLTYPE_STATIC } from "erc7579/lib/ModeLib.sol";
 
 import { ERC7579BootstrapConfig } from "main/src/external/ERC7579.sol";
 
 import "examples/src/ColdStorage/interfaces/Flashloan.sol";
-import "erc7579/src/lib/ExecutionLib.sol";
+import "erc7579/lib/ExecutionLib.sol";
 
 contract ColdStorageTest is RhinestoneModuleKit, Test {
     using ModuleKitHelpers for *;

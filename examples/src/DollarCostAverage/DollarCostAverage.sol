@@ -5,8 +5,8 @@ import { IERC20 } from "forge-std/interfaces/IERC20.sol";
 import { UniswapV3Integration } from "main/src/integrations/uniswap/v3/Uniswap.sol";
 import { Execution, IERC7579Account } from "main/src/Accounts.sol";
 import { ERC7579ExecutorBase } from "main/src/Modules.sol";
-import { ModeLib } from "erc7579/src/lib/ModeLib.sol";
-import { ExecutionLib } from "erc7579/src/lib/ExecutionLib.sol";
+import { ModeLib } from "erc7579/lib/ModeLib.sol";
+import { ExecutionLib } from "erc7579/lib/ExecutionLib.sol";
 
 contract DollarCostAverage is ERC7579ExecutorBase {
     /*//////////////////////////////////////////////////////////////////////////

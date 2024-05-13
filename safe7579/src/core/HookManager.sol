@@ -2,7 +2,7 @@
 pragma solidity ^0.8.23;
 
 import { ModuleManager } from "./ModuleManager.sol";
-import { IHook, IModule } from "erc7579/src/interfaces/IERC7579Module.sol";
+import { IHook, IModule } from "erc7579/interfaces/IERC7579Module.sol";
 
 /**
  * @title reference implementation of HookManager

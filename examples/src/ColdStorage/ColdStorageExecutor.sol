@@ -3,7 +3,7 @@ pragma solidity ^0.8.23;
 
 import { IERC7579Account } from "main/src/Accounts.sol";
 import { ERC7579ExecutorBase } from "main/src/Modules.sol";
-import { ModeLib } from "erc7579/src/lib/ModeLib.sol";
+import { ModeLib } from "erc7579/lib/ModeLib.sol";
 
 contract ColdStorageExecutor is ERC7579ExecutorBase {
     /*//////////////////////////////////////////////////////////////////////////
