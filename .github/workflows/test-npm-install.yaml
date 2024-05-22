@@ -38,6 +38,5 @@ jobs:
 
     - name: Clean up
       run: |
-        cd ..
         rm "${{ steps.npm-pack.outputs.package }}"
         rm -rf test-npm-install
