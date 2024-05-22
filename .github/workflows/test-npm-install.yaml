@@ -1,0 +1,43 @@
+name: Run NPM and Forge build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install Foundry
+      uses: foundry-rs/foundry-toolchain@v1
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Pack the npm package
+      id: npm-pack
+      run: echo "::set-output name=package::$(npm pack)"
+
+    - name: Run npm test
+      run: |
+        mkdir test-npm-install
+        cd test-npm-install
+        npm init -y
+        npm install "../${{ steps.npm-pack.outputs.package }}"
+        mkdir -p src
+        echo 'import { ColdStorageHook } from "modulekit/examples/src/ColdStorage/ColdStorageHook.sol";' > src/TestImport.sol
+        echo '[profile.default]
+        src = "src"
+        out = "out"
+        libs = ["node_modules"]' > foundry.toml
+        cp node_modules/modulekit/remappings.user.txt remappings.txt
+        forge build
+
+    - name: Clean up
+      run: |
+        cd ..
+        rm "${{ steps.npm-pack.outputs.package }}"
+        rm -rf test-npm-install
