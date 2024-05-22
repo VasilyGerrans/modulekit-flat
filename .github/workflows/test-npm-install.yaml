@@ -1,4 +1,4 @@
-name: Run NPM and Forge build
+name: Install into an NPM project
 
 on: [push]
 
@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Pack the npm package
+    - name: Pack the package
       id: npm-pack
       run: echo "::set-output name=package::$(npm pack)"
 
