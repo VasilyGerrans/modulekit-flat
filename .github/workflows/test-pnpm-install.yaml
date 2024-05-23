@@ -9,6 +9,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Set up Git configuration
+      run: |
+        git config --global url."https://".insteadOf git+ssh://git@
+
     - name: Install Foundry
       uses: foundry-rs/foundry-toolchain@v1
 
